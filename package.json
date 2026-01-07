@@ -1,0 +1,21 @@
+{
+  "name": "node-js-playwright-browserstack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx browserstack-node-sdk playwright test --config=./playwright.config.js --trace on",
+    "sample-test": "npx browserstack-node-sdk playwright test --config=./playwright.config.js --project='project1', 'project5'",
+    "sample-ats-test": "npx browserstack-node-sdk playwright test --config=./playwright.config.js --browserstack.config grid.browserstack.yml",
+    "sample-local-test": "npx browserstack-node-sdk playwright test --config=./playwright.local.config.js",
+    "postinstall": "npm update browserstack-node-sdk"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "1.56.1",
+    "browserstack-node-sdk": "^1.46.1",
+    "playwright": "1.56.1"
+  }
+}
