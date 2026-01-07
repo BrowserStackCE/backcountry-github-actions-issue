@@ -42,7 +42,7 @@ jobs:
       with:
         local-testing: 'start'
         local-logging-level: 'all-logs'
-        local-identifier: 'github-ci'
+        local-identifier: ${{ env.LOCAL_IDENTIFIER }}
 
     - name: 'Running a build'
       run: npm run build --if-present
@@ -54,4 +54,5 @@ jobs:
       uses: 'browserstack/github-actions/setup-local@master'
       with:
         local-testing: 'stop'
+        local-identifier: ${{ env.LOCAL_IDENTIFIER }}
 
