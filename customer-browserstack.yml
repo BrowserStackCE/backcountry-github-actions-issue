@@ -1,0 +1,35 @@
+#BrowserStackLocal.exe --key 9cHptYeVk5e8mFXzj8kA
+userName:
+accessKey:
+
+platforms:
+  - os: OS X
+    osVersion: Big Sur
+    browserName: Chrome
+    browserVersion: latest
+    #chrome:
+    #  driver: 112.0.5615.28
+    chromeOptions:
+      args:
+        - incognito
+        - --disable-blink-features=AutomationControlled
+        - --disable-infobars
+
+bstack:options:
+  http2: false
+#localIdentifier: ${LOCAL_IDENTIFIER}
+browserstackLocal: true
+browserStackLocalOptions:
+  skipBinaryInitialisation: true
+  localIdentifier: ${LOCAL_IDENTIFIER}
+acceptInsecureCerts: true
+buildName: browserstack-build-1
+projectName: BrowserStack Prod Suite Backcountry
+framework: playwright
+source: node-js-playwright-sample-sdk:v1
+networkLogs: true
+local: true
+geoLocation: US
+testObservability: true
+
+#source: java:intellij:v1.1.6

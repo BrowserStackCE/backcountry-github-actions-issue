@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx browserstack-node-sdk playwright test --config=./playwright.config.js --trace on",
+    "test": "npx browserstack-node-sdk playwright test --config=./playwright.config.js --trace on --browserstack.config 'customer-browserstack.yml'",
     "sample-test": "npx browserstack-node-sdk playwright test --config=./playwright.config.js --project='project1', 'project5'",
     "sample-ats-test": "npx browserstack-node-sdk playwright test --config=./playwright.config.js --browserstack.config grid.browserstack.yml",
     "sample-local-test": "npx browserstack-node-sdk playwright test --config=./playwright.local.config.js",
