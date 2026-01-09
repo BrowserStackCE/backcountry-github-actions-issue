@@ -20,7 +20,7 @@ bstack:options:
 browserstackLocal: true
 browserStackLocalOptions:
   skipBinaryInitialisation: true
-  localIdentifier: ${LOCAL_IDENTIFIER}
+  localIdentifier: ${BROWSERSTACK_LOCAL_IDENTIFIER}
 acceptInsecureCerts: true
 buildName: browserstack-build-1
 projectName: BrowserStack Prod Suite Backcountry
